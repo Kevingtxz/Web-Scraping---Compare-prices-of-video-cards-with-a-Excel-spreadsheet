@@ -46,8 +46,9 @@ class driver_handler:
 # workbook  = Workbook('list_products.xlsx')
 # worksheet = workbook.add_worksheet()
 # writer.save()
-        def find_best_price(self):
+        def find_best_price_americanas(self, product):
             self.driver.get(stores[index])
+            #id="h_search"
 
 
 pd.DataFrame({datetime.datetime.now(): prices})
