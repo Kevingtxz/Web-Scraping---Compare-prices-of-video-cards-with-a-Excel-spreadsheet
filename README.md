@@ -1,4 +1,4 @@
-# Web Scraping - Compare prices of video cards with a Excel spreadsheet
+# Web Scraping - Compare prices of video cards with an Excel spreadsheet
 
 This is a program to compare prices of video cards in Brazil, I made it with Python with Selenium. 
 It uses some Excel files with the links to get the prices.
