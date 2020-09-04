@@ -15,18 +15,20 @@ index = 0
 
 # List to put prices as a dataframe with Pandas
 prices = []
-            
+
 # Class to handle the web driver
 class driver_handler:
     def __init__(self, list_products):
         self.driver = webdriver.Firefox()
+
     def find_prices_americanas(self):
         if(isinstance(list_products['Product'][index], str)):
-            self.driver.get(stores[0])
+            self.driver.get(stores[0]+'busca/'+list_products['Product'][index]+"?ordenacao=lowerPrice")
             sleep(2)
-            self.driver.find_element_by_id("h_search").send_keys(list_products['Product'][index])
-            sleep(1)
-            self.driver.find_element_by_id("h_search").send_keys(Keys.RETURN)
+            prices.append(self.driver.find_element_by_xpath("//span[contains(text(), 'R$')]").text.replace("R$","").replace(".",""))
+        else:
+            prices.append('')
+    
 driver = driver_handler(list_products)
 driver.find_prices_americanas()
 
