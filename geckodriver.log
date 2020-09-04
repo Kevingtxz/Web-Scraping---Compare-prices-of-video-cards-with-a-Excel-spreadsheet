@@ -829,3 +829,7 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1598378892293	Marionette	INFO	Listening on port 64919
 1598378892592	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599180123091	geckodriver	INFO	Listening on 127.0.0.1:49786
+1599180126039	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DEVELO~1\\AppData\\Local\\Temp\\rust_mozprofile9NpEYi"
+1599180239979	geckodriver	INFO	Listening on 127.0.0.1:50098
+1599180243012	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DEVELO~1\\AppData\\Local\\Temp\\rust_mozprofileBmNYew"
